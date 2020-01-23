@@ -6,7 +6,7 @@ import java.util.TreeMap;
 //import java.util.TreeSet;
 
 public class ElectionParties {
-	 public void Details(TreeMap<String,ElectionPartiesDetails> det) {
+	 public static void Details(TreeMap<String,ElectionPartiesDetails> det) {
 		 Collection<ElectionPartiesDetails> c = det.values();
 			Iterator<ElectionPartiesDetails> itr = c.iterator();
 			
@@ -31,7 +31,8 @@ public class ElectionParties {
 		elect.put("na6",new ElectionPartiesDetails(7,"na7","01-08-1998","Dis2","Cons1","30-09-1998"));
 		elect.put("na1",new ElectionPartiesDetails(8,"na8","10-08-1998","Dis1","Cons2","10-09-1998"));
 		
-		
+		System.out.println(elect);
+		Details(elect);
 		
 	}
 
